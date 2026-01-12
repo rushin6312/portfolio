@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*共通部分----*/
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:"Playfair Display" "Roboto Mono" "Noto Sans JP";
+    margin: 0;
+}
+/* TOP ---*/
+.topheader{
+    position: relative;
+    max-width: 100%;
+    height: 790px;
+}
+.topheader::before{
+    content: "";
+    background-image: url(images/yuuhi.jpg);
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    opacity: 0.8;
+    background-position:bottom;
+    z-index: -1;
+}
+.top-nav{
+    display: flex;
+    justify-content:space-between;
+    font-size: 25px;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    gap:18px;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #FFF7F3
+}
+.top-midashi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Playfair Display";
+}
+.midashi1-front{
+    position: absolute;
+    top: 180px;
+    color: #FFF7F3;
+    font-size:2rem;
+}
+.midashi1-back{
+    position: absolute;
+    top:180px;
+    transform: translate(3px,1.3px);
+    color: #BAC1D3;
+    font-size: 2rem;
+}
+.midashi2{
+    position: absolute;
+    top:300px;
+    color:#FFF1E7 ;
+    font-family:"Caveat";
+}
+/* ABOUT ME ---*/
+.about-inner{
+    background-color:#FFF1E7;
+    padding: 65px 65px 75px;
+}
+.about-title{
+    font-size: 3rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: "Playfair Display";
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-left: 100px;
+}
+.about-image img{
+    width: 350px;
+    height:auto;
+    border-radius: 30%;
+    transform: translatex(-130px);
+}
+.about-text{
+    max-width: 500px;
+}
+.about-text .name{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 570;
+    font-family: "Playfair Display";
+}
+.about-text p{
+    margin: 0 0 10px;
+    line-height: 1.5rem;
+    font-family: "Noto Sans JP";
+    font-weight: 300;
+}
+.about-text .tool{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 570;
+    font-family: "Playfair Display";
+}
+
+/* WORKS ---*/
+.works{
+    background-color: #FFFBF5;
+}
+.works-inner{
+    max-width:100%;
+    padding: 50px 100px 90px;
+}
+.works-title{
+    font-size: 3rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Playfair Display";
+}
+.works-content{
+    display: grid;
+    list-style: none;
+    gap:30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.works-item{
+    text-align: center;
+    background-color: #FFF1E7;
+    padding: 10px;
+    border-radius: 20px;
+}
+.works-item :hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.works-item a{
+    text-decoration: none;
+    padding: 10px 0;
+    color: black;
+}
+.works-item img{
+    width: 250px;
+    height: auto;
+    margin-top: 30px;
+}
+.works-item .cafe{
+    margin:70px 0 50px;
+}
+.works-item .cake{
+    margin: 80px 0 60px;
+}
+.works-item .onsen{
+    margin: 85px 0 65px;
+}
+.works-name{
+    font-weight: 350;
+    font-family: "Noto Sans JP";
+}
+/* BOTTOM ---*/
+.bottom{
+    background-color: #5B698F;
+}
+.bottom-content{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    padding: 25px 0 0 0;
+    margin: 0;
+}
+.bottom-content li{
+    list-style: none;
+}
+.bottom-content a{
+    text-decoration: none;
+    color: #FFFBF5;
+}
+.bottom-mail-copyright{
+    line-height: 1;
+}
+.content-mail{
+    display: flex;
+    justify-content: center;
+    color: #FFFBF5;
+    margin: 10px 0 0 0;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px;
+    color:#FFFBF5;
+    padding: 0;
+}
+
